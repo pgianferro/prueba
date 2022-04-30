@@ -1,0 +1,66 @@
+
+Versión actual de Git
+git --version
+git version 2.30.1 (Apple Git-130)
+
+Clonar repositorio de GitHub
+git clone https://github.com/pgianferro/prueba.git
+Cloning into 'prueba'...
+
+Iniciar repositorio local
+git init
+
+Cambiar default branch name
+git config --global init.defaultBranch <name>
+
+Renombrar branch name 
+git branch -m <name>
+
+Nombre de usuario
+git config user.name <mi-nombre-de-usuario>
+
+Email de registro en GitHub
+git config user.Email <mi-correo>
+
+Comprobar nombre de usuario
+git config user.name
+pgianferro
+
+Comprobar nombre de usuario
+git config user.Email
+pablogianferro@gmail.com
+
+Nombre y mail globales
+git config --global user.name <mi-nombre-de-usuario>
+git config --global user.Email <mi-correo>
+
+Archivos ocultos
+ls -a 
+
+Conectar el repo local con el remoto
+git remote add origin https://github.com/mi-usuario/nombre-del-repo.git
+
+Comprobar la conexión local con remoto
+git remote -v
+origin  https://github.com/pgianferro/prueba.git (fetch)
+origin  https://github.com/pgianferro/prueba.git (push)
+
+Al agregar archivos se almancenan en pequeños paquetes llamados commits 
+Un Commit posee una marca de tiempo y firma del autor y así deja un historial de los cambios del proyecto.
+Nos permite hacer seguimiento y control de las versiones de los archivos.
+Archivos sin seguimiento: estaban de antes o son nuevos
+
+Comando para agregar archivos de a uno (solo funciona si en la carpeta existe un repositorio de github)
+git add <nombre-de-archivo>
+
+Comando para agregar archivos masivo
+git add .
+
+Comando para quitar archivos
+git rm --cached <nombre-de-archivo>
+
+cambio no agregado
+
+
+Seguimiento del estado de los archivos
+git status
